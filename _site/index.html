@@ -1,23 +1,48 @@
+<!DOCTYPE html>
 <html>
+ <meta charset="utf-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1">    
+
 <head>
-
-<style>
-body { height: 100%; margin: 0; background-color: #FAFDFE; font-family: Arial, sans-serif; }
-#layoutWrapper { height: auto !important; min-height: 100%; margin: 0 auto -6em; }
-#layoutContent { margin: 0 1em; }
-#layoutFooter  { margin: 0 1em; text-align: center; font-style: italic; font-size: smaller; }
-#layoutFooter, #layoutSpacer { height: 6em; }
-</style>
-
-<title>Download with IDM</title>
-
+<title>Private Torrents - Unconvential guide for torrents.</title>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+<link rel="stylesheet" href="../css/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:700" rel="stylesheet">
 </head>
 <body>
-
-<div id="layoutWrapper">
-<div id="layoutContent">
-
-<h3><br/>Download request has been captured by Internet Download Manager.</h3>
-
-<p><a id="linkContactSupport" href="http://www.internetdownloadmanager.com/support/chrome_integration.html">
-      <b>Contact IDM support</b></a></p>
+<script>
+$(document).ready(function(){
+   $("#menu").click(function(){
+      $(".bar1, .bar2").toggleClass("change"); 
+   }); 
+});
+</script>
+<div class="hero-container"></div>
+<div id="navbar">
+    <div id="menu" onclick="togglebar">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </div>
+<nav>
+    <ul>
+    <li><a href="../index.html">History</a></li>
+    <li><a href="../wiki.html">Wiki</a></li>
+    <li><a>Guide</a></li>
+    <li style="border-right: 0px;"><a >FAQ</a></li>
+    </ul></nav>
+    </div>
+<div class="container">
+<h2 id="head">How it all began ?</h2>
+    <p id="para">In April 2001 a programmer Bram Cohen from University of Buffalo proposed a peer-to-peer protcol, later on 2 July 2001 the first version of BitTorrent was released. The peer-to-peer protocol was named BitTorrents, as well as the file sharing program to use the protocol, known as BitTorrent. <br></p>
+<h2 id="head">Why Bram Cohen created BitTorrent?</h2>
+    <p id="para">
+        In early life Bram Cohen used to work at MojoNation. MojoNation allowed people to break up confidential files into encrypted chunks and distrubte those pieces on different computers running the software. So if somebody wanted to download a file he have to download it from many sources. Cohen found this concenpt very useful for file shareing and protocol. 
+        <br>
+        Cohen designed BiTorrent to be to download files from many different sources reducing the download time, especially for users with faster download and upload speed. The more popular a file is, the faster a user will be able to download it.</p>
+</div>
+    
+</body>
+</html>

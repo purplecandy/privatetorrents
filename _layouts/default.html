@@ -10,14 +10,26 @@
 <script src="../js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="../css/custom.css">
+<link href="https://fonts.googleapis.com/css?family=Merriweather|Montserrat:700" rel="stylesheet">
 </head>
 <body>
+<script>
+$(document).ready(function(){
+   $("#menu").click(function(){
+      $(".bar1, .bar2").toggleClass("change"); 
+   }); 
+});
+</script>
 <div class="hero-container"></div>
 <div id="navbar">
+    <div id="menu" onclick="togglebar">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+    </div>
 <nav>
     <ul>
-    <li><a>History</a></li>
-    <li><a>Wiki</a></li>
+    <li><a href="../index.html">History</a></li>
+    <li><a href="../wiki.html">Wiki</a></li>
     <li><a>Guide</a></li>
     <li style="border-right: 0px;"><a >FAQ</a></li>
     </ul></nav>
