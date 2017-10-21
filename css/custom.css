@@ -1,0 +1,23 @@
+.hero-container {
+    background: #22222b;
+    height: 100vh;
+    width: 100%;
+}
+
+#navbar nav ul {
+    text-align: center;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#navbar nav ul li {
+    padding: 30px 60px;
+    border-right: 1px solid #ccc;
+    display: inline-block;
+}
+
+#navbar nav ul li a {
+    display: block;
+    text-align: center;
+    
+}
