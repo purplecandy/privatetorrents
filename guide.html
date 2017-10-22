@@ -1,47 +1,84 @@
 ---
 layout: default
 ---    
-<script>
+<!--<script>
 $(document).ready(function(){
-
-$('.tab-content').hide();
-$('.tab-content:first').show();
-    
-   $("#list-example a").click(function(){
+   
+   $("#list-example a").click(function(event){
+       event.preventDefault();
+       var active_tab = $('#list-example a').attr('href');
+       
        $("#list-example a").removeClass("active");
        $(this).addClass("active");
        
-        $(this).parent().attr("id"); 
-       $( $(this).attr('href')).fadeIn();
+       if($(active_tab).hasClass()){
+       $(active_tab).removeClass('show');
+       $(active_tab).addClass('hide');
+       }
+       var tab = $(this).attr('href');
+
+       $(tab).removeClass('hide');
+       $(tab).addClass('show');
    }); 
 });
 
-</script>
+</script>-->
 <div class="container">
 <h2 id="head">How to ...</h2>
   <div class="row">
     <div class="col-4">
-    <div id="list-example" class="list-group">
-  <a class="list-group-item list-group-item-action active" href="#item1">Use a torrent</a>
-  <a class="list-group-item list-group-item-action" href="#item2">Create a torrent</a>
-  <a class="list-group-item list-group-item-action" href="#item3">Download a torrent</a>
-  <a class="list-group-item list-group-item-action" href="#item4">Item 4</a>
+    <div class="list-group" id="list-tab" role="tablist">
+  <a class="list-group-item list-group-item-action active" id="list-item1-list" data-toggle="list" href="#list-item1" role="tab" aria-controls="item1">Use a torrent</a>
+  <a class="list-group-item list-group-item-action" id="list-item2-list" data-toggle="list" href="#list-item2" role="tab" aria-controls="item2">Create a torrent</a>
+  <a class="list-group-item list-group-item-action" id="list-item3-list" data-toggle="list" href="#list-item3" role="tab" aria-controls="item3">Download a torrent</a>
 </div>
     </div>
     <div class="col-8">
     <div class="scroll-box">
-      <div class="tab-content current" id="item1C">
-            <h2 id="head">Step 1</h2><br>
+       <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade show active" id="list-item1" role="tabpanel" aria-labelledby="list-item1-list">
+            <h2 id="head">Step 1</h2>
             <p id="para">To use a torrent file on you must have a BitTorrent application. BitTorrent itself and other torrent supported applications are available on <a>Android</a> <a>iOS</a> <a>Windows</a> <a>Mac</a> <a>Linux</a>. You can download your copy of BitTorrent <a href="http://www.bittorrent.com/downloads/win" target="_blank">here</a></p>
           
-            <h2 id="head">Step 2</h2><br>
+            <h2 id="head">Step 2</h2>
             <p id="para">Install the BitTorrent client. Once the client is succesfully installed you're ready to open any .torrent file or magnet url.</p>
             
-            <br><br><em>Wasn't expecting it would be so easy ?</em>
+            <br><em>Wasn't expecting it would be so easy ?</em>
         </div>
-        <div class="tab-content" id="item2C">
+        <div class="tab-pane fade" id="list-item2" role="tabpanel" aria-labelledby="list-item2-list">
         <h2 id="head">Step 1</h2>
         <p id="para">To create a torrent you must have a torrent client on system.</p>
+
+        <h2 id="head">Step 2</h2>
+        <p id="para">File > Create Torrent</p>
+
+        <h2 id="head">Step 3</h2>
+        <p id="para">Select directories you want to upload.</p>
+
+        <h2 id="head">Step 4</h2>
+        <p id="para">Add Trackers. Remember this an important part trackers keep the records of sawrm hosts. You can get tracker list from <a href="https://newtrackon.com/list" target="_blank">here</a>.</p>
+            
+        <h2 id="head">Step 5</h2>
+        <p id="para">Save the torrent and send it to your freinds.<em> Remember do not tick private torrent unless you're using any private tracker</em></p>        
+            </div>
+        <div class="tab-pane fade" id="list-item3" role="tabpanel" aria-labelledby="list-item3-list">
+           <h2 id="head">It's upto you</h2>
+            <p id="para">Torrents can be downloaded from anywhere cloud,ftp,email,wifi transfer etc. But here is the list of few legal torrent downloading site.<em>Here you can share yours too</em><br>
+            <ul>
+<li><a href="http://www.publicdomaintorrents.info/" target="_blank">http://www.publicdomaintorrents.info/</a></li>
+<li><a href="https://archive.org/details/feature_films" target="_blank">https://archive.org/details/feature_films</a></li>
+<li><a href="http://www.legittorrents.info/index.php?search=&page=torrents" target="_blank">http://www.legittorrents.info/index.php?search=&page=torrents</a></li>
+<li><a href="http://www.vuze.com/content/" target="_blank">http://www.vuze.com/content/</a></li>
+<li><a href="http://bitlove.org/directory" target="_blank">http://bitlove.org/directory</a></li>
+<li><a href="http://linuxtracker.org/" target="_blank">http://linuxtracker.org/</a></li>
+<li><a href="https://www.jamendo.com/" target="_blank">https://www.jamendo.com/</a></li>
+<li><a href="http://www.miroguide.com/" target="_blank">http://www.miroguide.com/</a></li>
+<li><a href="http://www.gameupdates.org/" target="_blank">http://www.gameupdates.org/</a></li>
+<li><a href="http://bt.etree.org/" target="_blank">http://bt.etree.org/</a></li>
+<li><a href="http://academictorrents.com/" target="_blank">http://academictorrents.com/</a></li>
+<li><a href="http://tasvideos.org/" target="_blank">http://tasvideos.org/</a></li>
+</ul></p>
+           </div>
         </div>
         </div>
     </div>
