@@ -1,0 +1,50 @@
+---
+layout: default
+---    
+<script>
+$(document).ready(function(){
+
+$('.tab-content').hide();
+$('.tab-content:first').show();
+    
+   $("#list-example a").click(function(){
+       $("#list-example a").removeClass("active");
+       $(this).addClass("active");
+       
+        $(this).parent().attr("id"); 
+       $( $(this).attr('href')).fadeIn();
+   }); 
+});
+
+</script>
+<div class="container">
+<h2 id="head">How to ...</h2>
+  <div class="row">
+    <div class="col-4">
+    <div id="list-example" class="list-group">
+  <a class="list-group-item list-group-item-action active" href="#item1">Use a torrent</a>
+  <a class="list-group-item list-group-item-action" href="#item2">Create a torrent</a>
+  <a class="list-group-item list-group-item-action" href="#item3">Download a torrent</a>
+  <a class="list-group-item list-group-item-action" href="#item4">Item 4</a>
+</div>
+    </div>
+    <div class="col-8">
+    <div class="scroll-box">
+      <div class="tab-content current" id="item1C">
+            <h2 id="head">Step 1</h2><br>
+            <p id="para">To use a torrent file on you must have a BitTorrent application. BitTorrent itself and other torrent supported applications are available on <a>Android</a> <a>iOS</a> <a>Windows</a> <a>Mac</a> <a>Linux</a>. You can download your copy of BitTorrent <a href="http://www.bittorrent.com/downloads/win" target="_blank">here</a></p>
+          
+            <h2 id="head">Step 2</h2><br>
+            <p id="para">Install the BitTorrent client. Once the client is succesfully installed you're ready to open any .torrent file or magnet url.</p>
+            
+            <br><br><em>Wasn't expecting it would be so easy ?</em>
+        </div>
+        <div class="tab-content" id="item2C">
+        <h2 id="head">Step 1</h2>
+        <p id="para">To create a torrent you must have a torrent client on system.</p>
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+

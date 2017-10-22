@@ -1,46 +1,21 @@
 body{
     background: #DAF7A6;
 }
+
 .hero-container {
     background: #22222b;
     height: 100vh;
     width: 100%;
 }
 
-#navbar{
+#navbar {
     background: white;
+    color: black;
 }
-
-
-#menu {
-    display: inline-block;
-}
-
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: #333;
-    margin: 6px 0;
-    transition: 0.4s;
-}
-
-.change .bar1 {
-    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-    transform: rotate(-45deg) translate(-9px, 6px) ;
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-    transform: rotate(45deg) translate(-8px, -8px) ;
-}
-
 #navbar nav ul {
     text-align: center;
     margin: 0 auto;
     list-style: none;
-    
 }
 
 #navbar nav ul li {
@@ -60,6 +35,18 @@ body{
     padding-top: 30px;
 }
 
-#para {
+#para{
     font-family: 'Merriweather', serif;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.tab-content{
+
+}
+.tab-content.current {
+
 }
