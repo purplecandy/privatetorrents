@@ -1,9 +1,18 @@
+body{
+    background: #DAF7A6;
+}
+
 .hero-container {
     background: #22222b;
     height: 100vh;
     width: 100%;
+    z-index: 100;
 }
 
+#navbar {
+    background: white;
+    color: black;
+}
 #navbar nav ul {
     text-align: center;
     margin: 0 auto;
@@ -20,4 +29,44 @@
     display: block;
     text-align: center;
     
+}
+
+#head{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 30px;
+}
+
+#para{
+    font-family: 'Merriweather', serif;
+}
+
+.scroll-box {
+    overflow-y: scroll;
+    height: 400px;
+}
+
+footer{
+    padding-top: 60px;
+}
+
+.title{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 3em;
+    z-index: 1100;
+    color: #5cc7d2;
+    position: relative;
+    top: 50%;
+    text-align: center;
+    transform: translateY(-50%); 
+    
+}
+
+.description{
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 1100;
+    color: #ed3594;
+    position: relative;
+    top: 55%;
+    text-align: center;
+    transform: translateY(-55%); 
 }
